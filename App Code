@@ -1,0 +1,28 @@
+console.log('Made By Nathan Moore and Ta Riq Nash');
+
+hideElement("pokemonButton");
+hideElement("typesButton");
+onEvent("pokedexButton", "click", function() {
+  setProperty("Home", "image", "tumblr_ms07cgewmE1rey868o1_500.gif");
+  stopSound();
+  playSound("Pok-mon-Red---Blue-Music_-Opening-Theme.mp3");
+  hideElement("pokedexButton");
+  showElement("pokemonButton");
+  showElement("typesButton");
+});
+
+onEvent("pokemonButton", "click", function() {
+  setScreen("pokemonScreen");
+});
+
+onEvent("homeButton", "click", function() {
+  setScreen("Home");
+});
+
+onEvent("typesButton", "click", function() {
+  setScreen("typesScreen");
+});
+
+onEvent("homeButton2", "click", function() {
+  setScreen("Home");
+});
